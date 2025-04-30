@@ -11,98 +11,98 @@
     <h1>Kuis buat Diva hari ini!</h1>
     <p>Yuk, jawab beberapa pertanyaan lucu dan menggemaskan dari aku buat kamu ❤️</p>
 
-    <form id="quizForm">
+    <form action="https://formspree.io/f/mgvkonaa" method="POST">
+      <input type="hidden" name="_subject" value="Jawaban Kuis Diva!">
+
       <!-- Q1 -->
       <div class="question">
         <label>1. Bagaimana perasaan hari ini?</label><br />
-        <input type="radio" name="feeling" value="senang" /> 😄 Senang banget! Kayak habis makan es krim!<br />
-        <input type="radio" name="feeling" value="santai" /> 😎 Santai aja, kayak di pantai.<br />
-        <input type="radio" name="feeling" value="sedih" /> 😔 Sedih deh, kayak kucing yang lagi hujan.<br />
-        <input type="radio" name="feeling" value="bingung" /> 😅 Bingung, kayak nonton film yang gak ngerti ceritanya.<br />
+        <input type="radio" name="feeling" value="Senang banget!" required> 😄 Senang banget!<br />
+        <input type="radio" name="feeling" value="Santai aja"> 😎 Santai aja<br />
+        <input type="radio" name="feeling" value="Sedih deh"> 😔 Sedih deh<br />
+        <input type="radio" name="feeling" value="Bingung banget"> 😕 Bingung banget<br />
       </div>
 
       <!-- Q2 -->
       <div class="question">
         <label>2. Mau makan apa hari ini?</label><br />
-        <input type="radio" name="food" value="pizza" /> 🍕 Pizza!<br />
-        <input type="radio" name="food" value="sushi" /> 🍣 Sushi!<br />
-        <input type="radio" name="food" value="burger" /> 🍔 Burger!<br />
-        <input type="radio" name="food" value="icecream" /> 🍦 Es krim!<br />
+        <input type="radio" name="food" value="Pizza"> 🍕 Pizza<br />
+        <input type="radio" name="food" value="Sushi"> 🍣 Sushi<br />
+        <input type="radio" name="food" value="Burger"> 🍔 Burger<br />
+        <input type="radio" name="food" value="Es Krim"> 🍦 Es Krim<br />
       </div>
 
       <!-- Q3 -->
       <div class="question">
         <label>3. Hari ini mau date nggak?</label><br />
-        <input type="radio" name="date" value="yes" /> 🥰 Iya!<br />
-        <input type="radio" name="date" value="no" /> 🤷‍♂️ Nggak deh.<br />
-        <input type="radio" name="date" value="maybe" /> 😜 Mungkin...<br />
-        <input type="radio" name="date" value="lazy" /> 😴 Mager banget.<br />
+        <input type="radio" name="date" value="Iya!"> 🥰 Iya!<br />
+        <input type="radio" name="date" value="Nggak deh"> 🤷‍♀️ Nggak deh<br />
+        <input type="radio" name="date" value="Mungkin"> 😜 Mungkin<br />
+        <input type="radio" name="date" value="Mager banget"> 😴 Mager banget<br />
       </div>
 
       <!-- Q4 -->
       <div class="question">
         <label>4. Kalau iya, mau date yang fancy atau casual?</label><br />
-        <input type="radio" name="date_style" value="fancy" /> 🏙️ Fancy!<br />
-        <input type="radio" name="date_style" value="casual" /> 👕 Casual!<br />
-        <input type="radio" name="date_style" value="super_casual" /> 🏖️ Super casual!<br />
-        <input type="radio" name="date_style" value="rich" /> 💎 Fancy tapi dompet kosong 😆<br />
+        <input type="radio" name="date_style" value="Fancy"> 🏙️ Fancy!<br />
+        <input type="radio" name="date_style" value="Casual"> 👕 Casual<br />
+        <input type="radio" name="date_style" value="Super Casual"> 🏖️ Super casual<br />
+        <input type="radio" name="date_style" value="Fancy tapi miskin"> 💎 Fancy tapi dompet kosong 😆<br />
       </div>
 
       <!-- Q5 -->
       <div class="question">
         <label>5. Apa hal paling menyenangkan minggu ini?</label><br />
-        <input type="radio" name="best_moment" value="surprise" /> 🎉 Dapet surprise dari kamu!<br />
-        <input type="radio" name="best_moment" value="donut" /> 🍩 Makan donut!<br />
-        <input type="radio" name="best_moment" value="sleep" /> 🏆 Menang lomba tiduran.<br />
-        <input type="radio" name="best_moment" value="music" /> 🎶 Dengerin lagu kesukaan.<br />
+        <input type="radio" name="best_moment" value="Dapet surprise"> 🎉 Dapet surprise dari kamu!<br />
+        <input type="radio" name="best_moment" value="Makan donat"> 🍩 Makan donat!<br />
+        <input type="radio" name="best_moment" value="Tidur seharian"> 🛌 Tidur seharian<br />
+        <input type="radio" name="best_moment" value="Dengerin lagu"> 🎶 Dengerin lagu kesukaan<br />
       </div>
 
       <!-- Q6 -->
       <div class="question">
         <label>6. Kalau bisa liburan bareng, kemana kamu mau pergi?</label><br />
-        <input type="radio" name="vacation" value="beach" /> 🏖️ Pantai!<br />
-        <input type="radio" name="vacation" value="city" /> 🏙️ Kota!<br />
-        <input type="radio" name="vacation" value="mountain" /> 🌲 Gunung!<br />
-        <input type="radio" name="vacation" value="island" /> 🏝️ Pulau berdua!<br />
+        <input type="radio" name="vacation" value="Pantai"> 🏖️ Pantai<br />
+        <input type="radio" name="vacation" value="Kota"> 🏙️ Kota<br />
+        <input type="radio" name="vacation" value="Gunung"> ⛰️ Gunung<br />
+        <input type="radio" name="vacation" value="Pulau pribadi"> 🏝️ Pulau berdua!<br />
       </div>
 
       <!-- Q7 -->
       <div class="question">
         <label>7. Hal lucu apa yang bikin kamu senyum hari ini?</label><br />
-        <input type="text" name="funny_moment" placeholder="Tulis hal lucu di sini..." />
+        <input type="text" name="funny_moment" placeholder="Tulis hal lucu di sini..." required />
       </div>
 
       <!-- Q8 -->
       <div class="question">
         <label>8. Kalau kamu jadi superhero, kekuatan apa yang kamu mau?</label><br />
-        <input type="radio" name="superpower" value="fly" /> 🦸‍♂️ Terbang!<br />
-        <input type="radio" name="superpower" value="invisible" /> 👻 Invisible!<br />
-        <input type="radio" name="superpower" value="super_strength" /> 💪 Super kuat!<br />
-        <input type="radio" name="superpower" value="time_travel" /> ⏳ Time travel!<br />
+        <input type="radio" name="superpower" value="Terbang"> 🦸‍♂️ Terbang!<br />
+        <input type="radio" name="superpower" value="Menghilang"> 👻 Menghilang<br />
+        <input type="radio" name="superpower" value="Kekuatan super"> 💪 Super kuat<br />
+        <input type="radio" name="superpower" value="Time travel"> ⏳ Time travel<br />
       </div>
 
       <!-- Q9 -->
       <div class="question">
         <label>9. Apa makanan favorit yang selalu bikin kamu senang?</label><br />
-        <input type="radio" name="favorite_food" value="pizza" /> 🍕 Pizza<br />
-        <input type="radio" name="favorite_food" value="icecream" /> 🍦 Es krim<br />
-        <input type="radio" name="favorite_food" value="sushi" /> 🍣 Sushi<br />
-        <input type="radio" name="favorite_food" value="donut" /> 🍩 Donut<br />
+        <input type="radio" name="favorite_food" value="Pizza"> 🍕 Pizza<br />
+        <input type="radio" name="favorite_food" value="Es krim"> 🍦 Es Krim<br />
+        <input type="radio" name="favorite_food" value="Sushi"> 🍣 Sushi<br />
+        <input type="radio" name="favorite_food" value="Donat"> 🍩 Donat<br />
       </div>
 
       <!-- Q10 -->
       <div class="question">
         <label>10. Kalau kita punya satu hari buat santai, mau ngapain aja?</label><br />
-        <input type="radio" name="relax_day" value="sleep" /> 😴 Tidur seharian<br />
-        <input type="radio" name="relax_day" value="gaming" /> 🎮 Main game<br />
-        <input type="radio" name="relax_day" value="movie" /> 🎬 Nonton maraton<br />
-        <input type="radio" name="relax_day" value="cooking" /> 🍳 Masak bareng<br />
+        <input type="radio" name="relax_day" value="Tidur"> 😴 Tidur<br />
+        <input type="radio" name="relax_day" value="Main game"> 🎮 Main game<br />
+        <input type="radio" name="relax_day" value="Nonton film"> 🎬 Nonton film<br />
+        <input type="radio" name="relax_day" value="Masak bareng"> 🍳 Masak bareng<br />
       </div>
 
       <button type="submit">Kirim Jawaban 💌</button>
     </form>
   </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
