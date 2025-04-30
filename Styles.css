@@ -1,53 +1,126 @@
+/* Font lucu dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap');
+
 body {
-  font-family: 'Comic Sans MS', cursive, sans-serif;
-  background-color: #ffeef0;
-  color: #444;
   margin: 0;
   padding: 0;
+  font-family: 'Fredoka', sans-serif;
+  background: linear-gradient(to bottom, #ffe4ec, #e0f7fa);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 30px;
+  color: #444;
 }
 
 .container {
-  background: white;
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px 40px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
   max-width: 600px;
-  margin: 30px auto;
-  padding: 25px;
-  border-radius: 15px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  width: 100%;
+  animation: floatIn 1.2s ease-out both;
+}
+
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 h1 {
-  color: #ff6f91;
   text-align: center;
+  color: #ff6f91;
+  font-size: 2em;
+  margin-bottom: 10px;
+  animation: popUp 1s ease-in-out;
+}
+
+@keyframes popUp {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
 }
 
 p {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 25px;
 }
 
 .question {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  padding: 15px;
+  background: #fff6fb;
+  border-radius: 15px;
+  border: 2px dashed #ffd6e0;
+  transition: transform 0.3s;
 }
 
-input[type="text"] {
-  width: 100%;
-  padding: 10px;
-  margin-top: 6px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+.question:hover {
+  transform: scale(1.02);
 }
 
-button {
-  background-color: #ff6f91;
-  color: white;
-  padding: 12px;
-  width: 100%;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
+label {
+  font-weight: 600;
+  color: #ff4081;
+  font-size: 1.05em;
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="radio"], input[type="text"] {
+  margin-bottom: 8px;
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #ff4e7c;
+input[type="text"] {
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 95%;
+  font-size: 1em;
+  transition: 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #ff90b4;
+  outline: none;
+}
+
+button[type="submit"] {
+  background-color: #ff90b4;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #ff6395;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
 }
